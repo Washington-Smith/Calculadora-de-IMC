@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --dark: #272827;
+    --orange: #CEAE7C;
+    --white: #fff;
+    --dark-orange: #696251;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+#principal {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#area-calc {
+    width: 300px;
+    height: 400px;
+
+    background-color: var(--white);
+    border: 5px solid var(--dark-orange);
+    border-radius: 20px;
+    margin: 7em auto;
+    color: var(--dark-orange);
+}
+
+#area-calc form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#area-calc h1 {
+    font-size: 2em;
+
+    margin: 20px 10px;
+}
+
+#area-calc label {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#area-calc input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+
+#area-calc input:last-child {
+    border-radius: 50px;
+    border: none;
+    background-color: var(--dark-orange);
+    color: var(--white);
+    font: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: all 1s ease-in-out;
+}
+
+#area-calc input:last-child:hover {
+    opacity: .9;
+}
+
+#informacao {
+    width: 90%;
+    height: 50vh;
+    margin: 9em auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#informacao h1 {
+    color: var(--orange);
+    font-size: 2.2em;
+    font-family: 'DM Serif Display';
+    margin-bottom: 30px;
+}
+
+#informacao p {
+    color: var(--white);
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--orange);
+}
+
+#informacao P:last-child {
+    font-size: .9em;
+    color: var(--orange);
+    border: none;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    #principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #area-calc {
+        width: 200px;
+        height: 300px;
+    }
+
+    #area-calc h1 {
+        font-size: 1.2em;
+    }
+
+    #area-calc label {
+        font-size: .8em;
+    }
+
+    #informacao {
+
+        height: 25vh;
+        margin: 7em auto;
+    }
+
+    #informacao h1 {
+        font-size: 1em;
+    }
+
+    #area-calc input {
+        width: 170px;
+        font-size: .9em;
+
+    }
+
+    #informacao p {
+        font-size: .7em;
+    }
+
+    #informacao P:last-child {
+        font-size: .6em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #principal {
+        grid-template-columns: 1fr;
+    }
+
+    #informacao {
+        width: 250px;
+        height: 25vh;
+    }
+
+    #informacao h1 {
+        font-size: 1em;
+    }
+
+    #area-calc input {
+        width: 200px;
+        font-size: .9em;
+
+    }
+
+    #informacao p {
+        font-size: .7em;
+    }
+
+    #informacao P:last-child {
+        font-size: .6em;
+    }
+
+    #area-calc {
+        width: 250px;
+        height: 300px;
+    }
+
+    #area-calc h1 {
+        font-size: 1.5em;
+    }
+
+    #area-calc label {
+        font-size: 1em;
+    }
+
+
+}
